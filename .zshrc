@@ -121,3 +121,14 @@ eval "$(pyenv init -)"
 
 # Force to load it, after latest update [2024-03-07] it stopped working automatically
 git_prompt_info
+
+# Change default editor
+export EDITOR='nvim'
+
+# Add Docker Desktop for Mac (docker)
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+
+# Add GO binaries to PATH
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+

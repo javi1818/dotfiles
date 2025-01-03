@@ -51,4 +51,16 @@ require'lspconfig'.rust_analyzer.setup({
     }
 })
 
+require('lspconfig').gopls.setup({
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+      gofumpt = true,
+    },
+  },
+})
+
 lsp.setup()

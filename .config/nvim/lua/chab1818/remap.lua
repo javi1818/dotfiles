@@ -22,4 +22,4 @@ vim.keymap.set("n", "<leader><Right>", function()
 	vim.api.nvim_command("vertical resize -10")
 end)
 
-vim.keymap.set('n', '<leader>rb', function() require('reach').buffers(buffer_options) end, {})
+vim.keymap.set('n', '<leader>rb', function() require('reach').buffers() end, {})

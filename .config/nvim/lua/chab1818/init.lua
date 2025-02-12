@@ -1,9 +1,15 @@
 print("Init chab1818")
+-- require("chab1818.packer")
+require("chab1818.lazyvim")
+
+
+
 -- Key Maps
 require("chab1818.remap")
-require("chab1818.packer")
+
 -- Activate Theme
-vim.cmd('colorscheme rose-pine')
+-- vim.cmd('colorscheme rose-pine')
+
 -- Look preferences
 vim.wo.number = true
 vim.wo.cursorline = true

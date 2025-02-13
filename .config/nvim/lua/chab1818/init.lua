@@ -8,7 +8,7 @@ require("chab1818.lazyvim")
 require("chab1818.remap")
 
 -- Activate Theme
--- vim.cmd('colorscheme rose-pine')
+vim.cmd('colorscheme rose-pine')
 
 -- Look preferences
 vim.wo.number = true

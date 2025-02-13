@@ -26,17 +26,26 @@ return require('lazy').setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 
-  {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
-	  -- or                            , branch = '0.1.x',
-	  dependencies = { {'nvim-lua/plenary.nvim'} }
-  },
+--  {
+--	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
+--	  -- or                            , branch = '0.1.x',
+--	  dependencies = { {'nvim-lua/plenary.nvim'} }
+--  },
+
+	{
+		"ibhagwan/fzf-lua",
+		-- optional for icon support
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		-- or if using mini.icons/mini.nvim
+		-- dependencies = { "echasnovski/mini.icons" },
+		opts = {}
+	},
 
   { 'rose-pine/neovim', as = 'rose-pine' },
 
   {'nvim-treesitter/nvim-treesitter'},
 
---   'mbbill/undotree',
+  'mbbill/undotree',
 
 --   'tpope/vim-fugitive',
 

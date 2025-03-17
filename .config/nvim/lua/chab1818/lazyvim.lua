@@ -45,7 +45,7 @@ return require('lazy').setup({
 
   {'nvim-treesitter/nvim-treesitter'},
 
-  'mbbill/undotree',
+--   'mbbill/undotree',
 
 --   'tpope/vim-fugitive',
 

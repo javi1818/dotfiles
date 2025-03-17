@@ -108,6 +108,7 @@ alias treeg='git ls-files | tree --fromfile'
 alias clw='cargo lambda watch'
 alias clb='cargo lambda build'
 alias cli='cargo lambda invoke'
+alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
 
 # FZF shortcuts
 source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"

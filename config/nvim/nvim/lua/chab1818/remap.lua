@@ -23,3 +23,8 @@ vim.keymap.set("n", "<leader><Right>", function()
 end)
 
 vim.keymap.set('n', '<leader>rb', function() require('reach').buffers() end, {})
+
+vim.keymap.set('n', '<C-Left>', '<C-w>h', { desc = 'Go to left window' })
+vim.keymap.set('n', '<C-Down>', '<C-w>j', { desc = 'Go to lower window' })
+vim.keymap.set('n', '<C-Up>', '<C-w>k', { desc = 'Go to upper window' })
+vim.keymap.set('n', '<C-Right>', '<C-w>l', { desc = 'Go to right window' })

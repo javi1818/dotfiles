@@ -1,0 +1,4 @@
+[font]
+#	normal.family = "Agave Nerd Font"
+  normal = { family = "3270 Nerd Font", style = "Regular" }
+	size = 18

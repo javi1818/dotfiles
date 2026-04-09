@@ -20,3 +20,13 @@ vim.bo.expandtab = true
 -- vim.wo.relativenumber = 1
 
 vim.env.BAT_THEME = 'Dracula'
+
+
+-- Check if 'rg' is installed
+if vim.fn.executable("rg") == 1 then
+    -- Set the grep program to ripgrep with flags for smart case and hidden files
+    vim.opt.grepprg = "rg --vimgrep --smart-case --hidden"
+    
+    -- Tell Neovim how to parse the output (File:Line:Column:Message)
+    vim.opt.grepformat = "%f:%l:%c:%m"
+end

@@ -22,6 +22,14 @@ vim.keymap.set("n", "<leader><Right>", function()
 	vim.api.nvim_command("vertical resize -10")
 end)
 
+vim.keymap.set("n", "<leader><Up>", function()
+	vim.api.nvim_command("horizontal resize +5")
+end)
+
+vim.keymap.set("n", "<leader><Down>", function()
+	vim.api.nvim_command("horizontal resize -5")
+end)
+
 vim.keymap.set('n', '<leader>rb', function() require('reach').buffers() end, {})
 
 vim.keymap.set('n', '<C-Left>', '<C-w>h', { desc = 'Go to left window' })

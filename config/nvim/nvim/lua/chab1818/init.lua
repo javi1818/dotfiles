@@ -1,5 +1,5 @@
 print("Init chab1818")
--- require("chab1818.packer")
+
 require("chab1818.lazyvim")
 
 

@@ -5,9 +5,9 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 -- (Optional) Configure lua language server for neovim
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+vim.lsp.config("lua_ls", (lsp.nvim_lua_ls()))
 
-require'lspconfig'.ruff_lsp.setup{
+vim.lsp.config("ruff_lsp", {
   init_options = {
     settings = {
       -- Any extra CLI arguments for `ruff` go here.
@@ -16,7 +16,7 @@ require'lspconfig'.ruff_lsp.setup{
   }
 }
 
-require'lspconfig'.pylsp.setup{
+vim.lsp.config("pylsp", {
   settings = {
     pylsp = {
       plugins = {
@@ -27,9 +27,9 @@ require'lspconfig'.pylsp.setup{
       }
     }
   }
-}
+})
 
-require'lspconfig'.rust_analyzer.setup({
+vim.lsp.config("rust_analyzer", {
     on_attach=on_attach,
     settings = {
         ["rust-analyzer"] = {
@@ -51,7 +51,7 @@ require'lspconfig'.rust_analyzer.setup({
     }
 })
 
-require('lspconfig').gopls.setup({
+vim.lsp.config("gopls", {
   settings = {
     gopls = {
       analyses = {

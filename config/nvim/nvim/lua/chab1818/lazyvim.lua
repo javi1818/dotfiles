@@ -115,5 +115,31 @@ return require('lazy').setup({
   {
     "lewis6991/gitsigns.nvim",
     "tpope/vim-fugitive",
-  }
+  },
+  {
+    "olimorris/codecompanion.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim"
+    },
+    opts = {
+      interactions = {
+        chat = {
+          adapter = "ollama",
+          model = "qwen2.5-coder:3b"
+        },
+        inline = {
+          adapter = "ollama",
+          model = "qwen2.5-coder:3b"
+        },
+        agent = {
+          adapter = "ollama",
+          model = "qwen2.5-coder:3b"
+        },
+      },
+      -- NOTE: The log_level is in `opts.opts`
+      opts = {
+        log_level = "DEBUG",
+      },
+    },
+  },
 })

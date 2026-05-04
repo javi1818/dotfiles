@@ -4,6 +4,12 @@ require("fzf-lua").setup(
     winopts={
       height = 0.95,
       width = 0.95
+    },
+    previewers = {
+      builtin = {
+        syntax_limit_b = 1024*100, -- disable if file > 100KB
+        treesitter = { enabled = false } -- Turn this off temporarily
+      }
     }
   }
 

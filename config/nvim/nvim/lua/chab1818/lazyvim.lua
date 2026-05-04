@@ -156,4 +156,5 @@ return require('lazy').setup({
    end,
    },
   { 'nvim-mini/mini.nvim', version = '*' },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 })

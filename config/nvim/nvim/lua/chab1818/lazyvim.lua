@@ -155,4 +155,5 @@ return require('lazy').setup({
      dofile(plugin.dir .. "/editors/nvim/plugin/lisette.lua")
    end,
    },
+  { 'nvim-mini/mini.nvim', version = '*' },
 })

@@ -142,3 +142,6 @@ export PATH="/Users/javier.portillo/.local/bin:$PATH"
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/javier.portillo/.lmstudio/bin"
 # End of LM Studio CLI section
+
+# Load local environment variables
+[ -f ~/.env ] && source ~/.env

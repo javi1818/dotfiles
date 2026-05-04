@@ -135,3 +135,10 @@ export PATH="$PATH:$GOPATH/bin"
 
 # Add Postgres tools
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Added by Hugging Face CLI installer
+export PATH="/Users/javier.portillo/.local/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/javier.portillo/.lmstudio/bin"
+# End of LM Studio CLI section

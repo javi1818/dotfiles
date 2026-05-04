@@ -54,22 +54,25 @@ return require('lazy').setup({
 
 --   'tpope/vim-fugitive',
 
+--  {
+--	  'VonHeikemen/lsp-zero.nvim',
+--	  branch = 'v3.x',
+--	  dependencies = {
+--		  -- LSP Support
+--		  {'neovim/nvim-lspconfig'},             -- Required
+--		  {'williamboman/mason.nvim'},           -- Optional
+--		  {'williamboman/mason-lspconfig.nvim'}, -- Optional
+--
+--		  -- Autocompletion
+--		  {'hrsh7th/nvim-cmp'},     -- Required
+--		  {'hrsh7th/cmp-nvim-lsp'}, -- Required
+--		  {'L3MON4D3/LuaSnip'},     -- Required
+--	  }
+--  },
   {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v3.x',
-	  dependencies = {
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},             -- Required
-		  {'williamboman/mason.nvim'},           -- Optional
-		  {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
-		  -- Autocompletion
-		  {'hrsh7th/nvim-cmp'},     -- Required
-		  {'hrsh7th/cmp-nvim-lsp'}, -- Required
-		  {'L3MON4D3/LuaSnip'},     -- Required
-	  }
+    "mason-org/mason.nvim",
+    opts = {}
   },
-
   'vim-airline/vim-airline',
   'vim-airline/vim-airline-themes',
 

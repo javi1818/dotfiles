@@ -14,6 +14,11 @@ vim.keymap.set("n", "<leader>tn", vim.cmd.tabnext)
 vim.keymap.set("n", "<leader>tp", vim.cmd.tabprevious)
 vim.keymap.set("n", "<leader>bd", vim.cmd.bdelete)
 
+vim.keymap.set("n", "<F2>", vim.cmd.ALERename)
+
+-- Suggested modern keymap (using 'gl' for 'get line' or 'diagnostic line')
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { desc = 'Show diagnostic in floating window' })
+
 vim.keymap.set("n", "<leader><Left>", function()
 	vim.api.nvim_command("vertical resize +10")
 end)

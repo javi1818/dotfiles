@@ -133,3 +133,5 @@ export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
+# Add Postgres tools
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

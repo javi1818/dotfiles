@@ -43,7 +43,12 @@ return require('lazy').setup({
 
   { 'rose-pine/neovim', as = 'rose-pine' },
 
-  {'nvim-treesitter/nvim-treesitter'},
+  {
+    'nvim-treesitter/nvim-treesitter',
+    branch = "main",
+    lazy = false,
+    build = ':TSUpdate'
+  },
 
 --   'mbbill/undotree',
 

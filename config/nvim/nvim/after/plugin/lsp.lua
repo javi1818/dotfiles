@@ -1,11 +1,11 @@
-local lsp = require('lsp-zero').preset({})
+-- local lsp = require('lsp-zero').preset({})
 
-lsp.on_attach(function(client, bufnr)
-  lsp.default_keymaps({buffer = bufnr})
-end)
+--lsp.on_attach(function(client, bufnr)
+--  lsp.default_keymaps({buffer = bufnr})
+--end)
 
 -- (Optional) Configure lua language server for neovim
-vim.lsp.config("lua_ls", (lsp.nvim_lua_ls()))
+-- vim.lsp.config("lua_ls", (lsp.nvim_lua_ls()))
 
 vim.lsp.config("ruff_lsp", {
   init_options = {
@@ -60,7 +60,7 @@ vim.lsp.config("rust_analyzer", {
         }
     }
 })
-
+-- vim.lsp.codelens.enable(true)
 vim.lsp.config("gopls", {
   settings = {
     gopls = {
@@ -84,4 +84,4 @@ vim.lsp.config("gopls", {
   },
 })
 
-lsp.setup()
+-- lsp.setup()

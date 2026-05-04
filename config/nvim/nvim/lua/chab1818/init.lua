@@ -10,6 +10,7 @@ require("chab1818.remap")
 -- Activate Theme
 -- vim.cmd('colorscheme rose-pine')
 vim.cmd('colorscheme sonokai')
+-- vim.cmd.colorscheme "catppuccin-nvim"
 
 -- Look preferences
 vim.wo.number = true
@@ -30,3 +31,9 @@ if vim.fn.executable("rg") == 1 then
     -- Tell Neovim how to parse the output (File:Line:Column:Message)
     vim.opt.grepformat = "%f:%l:%c:%m"
 end
+
+-- Required for treesitter highlighting
+--vim.api.nvim_create_autocmd('FileType', {
+--  pattern = { '<filetype>' },
+--  callback = function() vim.treesitter.start() end,
+--})

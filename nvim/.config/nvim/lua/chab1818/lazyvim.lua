@@ -163,6 +163,9 @@ return require('lazy').setup({
         require('lspsaga').setup({
 	  lightbulb = {
 	    enable = false
+	  },
+	  outline = {
+	    close_after_jump = true
 	  }
 	})
     end,

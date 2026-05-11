@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>ex", vim.cmd.NvimTreeToggle)
 -- Copy current file path to clipboard
 vim.keymap.set("n", "<leader>cf", function()
-	vim.api.nvim_command("let @+=@%")
+	zvim.api.nvim_command("let @+=@%")
 	vim.api.nvim_command('echo "File path copied to clipboard: " . @%')
 end)
 vim.keymap.set("n", "<leader>an", vim.cmd.ALENext)
@@ -19,28 +19,28 @@ vim.keymap.set("n", "<F2>", vim.cmd.ALERename)
 -- Suggested modern keymap (using 'gl' for 'get line' or 'diagnostic line')
 vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { desc = 'Show diagnostic in floating window' })
 
-vim.keymap.set("n", "<leader><Left>", function()
+vim.keymap.set("n", "<C-Left>", function()
 	vim.api.nvim_command("vertical resize +10")
 end)
 
-vim.keymap.set("n", "<leader><Right>", function()
+vim.keymap.set("n", "<C-Right>", function()
 	vim.api.nvim_command("vertical resize -10")
 end)
 
-vim.keymap.set("n", "<leader><Up>", function()
+vim.keymap.set("n", "<C-Up>", function()
 	vim.api.nvim_command("horizontal resize +5")
 end)
 
-vim.keymap.set("n", "<leader><Down>", function()
+vim.keymap.set("n", "<C-Down>", function()
 	vim.api.nvim_command("horizontal resize -5")
 end)
 
 vim.keymap.set('n', '<leader>rb', function() require('reach').buffers() end, {})
 
-vim.keymap.set('n', '<C-Left>', '<C-w>h', { desc = 'Go to left window' })
-vim.keymap.set('n', '<C-Down>', '<C-w>j', { desc = 'Go to lower window' })
-vim.keymap.set('n', '<C-Up>', '<C-w>k', { desc = 'Go to upper window' })
-vim.keymap.set('n', '<C-Right>', '<C-w>l', { desc = 'Go to right window' })
+vim.keymap.set('n', '<leader><Left>', '<C-w>h', { desc = 'Go to left window' })
+vim.keymap.set('n', '<leader><Down>', '<C-w>j', { desc = 'Go to lower window' })
+vim.keymap.set('n', '<leader><Up>', '<C-w>k', { desc = 'Go to upper window' })
+vim.keymap.set('n', '<leader><Right>', '<C-w>l', { desc = 'Go to right window' })
 
 -- LSP Saga
 vim.keymap.set("n", "<leader>so", "<cmd>Lspsaga outline<CR>")

@@ -1,6 +1,9 @@
 require("fzf-lua").setup(
   {
     'fzf-native',
+    oldfiles = {
+	stat_file = false
+    },
     winopts={
       height = 0.95,
       width = 0.95

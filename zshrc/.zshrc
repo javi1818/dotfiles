@@ -145,3 +145,8 @@ export PATH="$PATH:/Users/javier.portillo/.lmstudio/bin"
 
 # Load local environment variables
 [ -f ~/.env ] && source ~/.env
+
+# Make brew libraries visible for the Go compiler
+export CGO_CPPFLAGS="-I$(brew --prefix)/include"
+export CGO_CXXFLAGS="-I$(brew --prefix)/include"
+export CGO_LDFLAGS="-L$(brew --prefix)/lib"
